@@ -21,6 +21,11 @@ body {
   font-size: 15px;
   color: #676a6d;
 }
+ 
+.settingz {
+    margin: 0 auto;
+
+}
 
 a {
   color: #3287B2;
@@ -359,6 +364,7 @@ button.toast-close-button {
 .main-content {
   padding: 28px 10px;
 }
+
 
 html.fullscreen-bg,
 html.fullscreen-bg body,
@@ -1305,6 +1311,7 @@ ul.activity-list > li .timestamp {
   *display: inline;
   width: 99%;
   vertical-align: middle;
+
 }
 .auth-box .left {
   float: left;
