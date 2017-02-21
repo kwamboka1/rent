@@ -31,10 +31,9 @@
 				<nav>
 					<ul class="nav">
 						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<!-- <li><a href="users.html" class=""><i class="lnr lnr-user"></i> <span>Users</span></a></li> -->
-						<!-- <li><a href="tenants.html" class=""><i class="lnr lnr-users"></i> <span>Tenants</span></a></li> -->
 						
-							<li>
+						
+						<!-- 	<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-user"></i> <span>Users</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages" class="collapse ">
 								<ul class="nav">
@@ -43,14 +42,14 @@
 									
 								</ul>
 							</div>
-						</li>
+						</li> -->
 						<br>
 
 						<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-apartment"></i> <span>Tenants</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="subPages" class="collapse ">
 								<ul class="nav">
-									<li><a href="tenants.html" class="">List of Tenants</a></li>
+									<li><a href="list of tenants.html" class="">List of Tenants</a></li>
 									<li><a href="add tenant.html" class="">Add Tenant</a></li>
 									
 								</ul>
@@ -128,7 +127,7 @@
 			<!-- END NAVBAR -->
 				<br>
 					<h3 class="page-title">Add Tenant</h3>	
-
+								<div class="fom" style="margin-left: 150px;">
 								<form action="/action_page.php"> 
 
 								  First name:<br>
@@ -139,18 +138,36 @@
 								  <br><br>
 								   Role:<br>
 
-								  <input type="text" name="role" value=" " >
-								  
+								 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+											<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+											   <option></option>
+											   <option value="one">Caretaker</option>
+											   <option value="two">Admin</option>
+											  
+											</select>
+											<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
+											<input name="idValue" id="idValue" type="hidden">
+`									</div>
+									<br>
 								  
 								   Status:
-								  <input type="text" name="Status" value="">
+										 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+											<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+											   <option></option>
+											   <option value="one">active</option>
+											   <option value="two">inactive</option>
+											  
+											</select>
+											<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
+											<input name="idValue" id="idValue" type="hidden">
+`										</div>
+								  
 
-								  <br><br>
-								  <input type="submit" value="Submit">
 
 								</form> 
 								<br>
-								<button>Add Tenant </button> 
+								<button>Add Tenant </button>
+								</div> 
 									
 							
 						</div>

@@ -1438,6 +1438,7 @@ ul.activity-list > li .timestamp {
   }
   .auth-box .content {
     width: 95%;
+    margin-left: 100px;
   }
   .auth-box.lockscreen {
     width: 90%;
