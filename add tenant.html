@@ -125,54 +125,52 @@
 				</div>
 			</nav>
 			<!-- END NAVBAR -->
+
 				<br>
-					<h3 class="page-title">Add Tenant</h3>	
-								<div class="fom" style="margin-left: 150px;">
-								<form action="/action_page.php"> 
+					
+								
+				<div class="adten" style="width: 580px;height: 250px;background-color: #fff;margin: 0 auto;padding: 20px; box-shadow: 1px 2px 2px 1px #888888;">
 
-								  First name:<br>
-								  <input type="text" name="firstname" value="">
-								  
-								  Last name:
-								  <input type="text" name="lastname" value="">
-								  <br><br>
-								   Role:<br>
+					<h3 class="page-title" >Add Tenant</h3>
 
-								 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
-											<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
-											   <option></option>
-											   <option value="one">Caretaker</option>
-											   <option value="two">Admin</option>
-											  
-											</select>
-											<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
-											<input name="idValue" id="idValue" type="hidden">
-`									</div>
-									<br>
-								  
-								   Status:
-										 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
-											<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
-											   <option></option>
-											   <option value="one">active</option>
-											   <option value="two">inactive</option>
-											  
-											</select>
-											<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
-											<input name="idValue" id="idValue" type="hidden">
-`										</div>
-								  
+						<input class="form-control input-lg" placeholder="First Name" type="text" style="width: 250px; float: left; margin: 0 20px 0 0;" >
+						
+
+						<input class="form-control input-lg" placeholder="Last Name Name" type="text" style="width: 250px; float: left; margin: 0 20px 0 0;">
 
 
-								</form> 
-								<br>
-								<button>Add Tenant </button>
+						<!-- <input class="form-control input-lg" placeholder="Email" type="text" style="width: 250px; float: left; margin-top: 20px;margin-right: 20px;">
+
+
+						<input class="form-control input-lg" placeholder="Phone" type="text" style="width: 250px; float: left; margin-top: 20px;margin-right: 20px;">
+ -->
+								
+						<select class="form-control input-lg" style="width: 250px; float: left; margin-top: 20px;margin-right: 20px;" >
+										<option value="hse no.">Role</option>
+										<option value="">Caretaker</option>
+										<option value="">Admin</option>
+										
+						</select>
+
+						<select class="form-control input-lg" style="width: 250px; float: left; margin-top: 20px;margin-right: 20px;" >
+										<option value="hse no.">Status</option>
+										<option value="">Active</option>
+										<option value="">Inactive</option>
+										
+										
+						</select>
+						<br clear="all"><br>
+
+						<button>Submit</button>
+								
+
+								
 								</div> 
 									
 							
 						</div>
 					</div>
-				</div> -->
+				</div> 
 			</div>
 			<!-- END MAIN CONTENT -->
 			<footer>

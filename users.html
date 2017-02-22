@@ -136,29 +136,32 @@
 			</nav>
 			<!-- END NAVBAR -->
 				<br>
-					<h3 class="page-title">List of Users</h3>	<button style="float: right;padding-top: 0px;margin-bottom: 5px;" >  Action:<br>
+				<h1 class="panel-title" style="width: 100%;height: 55px;background-color: #fff; padding-left: 50px;padding-top:10px;margin-bottom: 10px;font-size: 30px;" >List of Users</h1>
+				<div class="panel panel-headline" style="max-width: 90%;margin: 0 auto;">
+						<div class="panel-heading">
+							
+							<button  type="button" class="btn btn-primary btn-block" style="width: 200px;height: 30px; float: left;color: #000;margin-top: 10px;">Add user</button>
+							
+						</div>
+						<div class="panel-body">
+						
+							<select class="form-control input-lg" style="width: 250px;margin-top: 10px;margin-bottom:10px;float: right;" >
+											<option value="">Action</option>
+											<option value="">Edit</option>
+											<option value="">Delete</option>
+											
+											
+							</select>
+									  
+								
 
-												 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
-															<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
-															   <option></option>
-															   <option value="one">Edit</option>
-															   <option value="two">Delete</option>
-															  
-															</select>
-															<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
-															<input name="idValue" id="idValue" type="hidden">
-				`									</div>
-												  
-								  
-								</button>
-
-					<table id="myTable" class="display" cellspacing="0" width="100%">
+					<table id="myTable" class="display" cellspacing="0" width="90%">
 	<thead>
 		<tr>
 			
 			<th>First Name</th>
 			<th>Last Name</th>
-			<th></th>
+			<th>Subscriptions</th>
 			<th>Hse no.</th>
 			<th>Start date</th>
 			<th>Rent</th>
@@ -166,19 +169,35 @@
 	</thead>
 	<tfoot>
 		<tr>
-			<th>Name</th>
-			<th>Position</th>
-			<th>Office</th>
-			<th>Age</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Subscriptions</th>
+			<th>Hse no.</th>
 			<th>Start date</th>
-			<th>Salary</th>
+			<th>Rent</th>
 		</tr>
 	</tfoot>
 	<tbody>
 		<tr>
 			<td>Tiger Nixon</td>
 			<td>System Architect</td>
-			<td>Edinburgh</td>
+			<td></td>
+			<!-- <td style="float: right;padding-top: 0px;margin-bottom: 5px;" > <br>
+
+												 <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+															<select style="position:absolute;top:0px;left:0px;width:200px; height:25px;line-height:20px;margin:0;padding:0;" onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+															   <option></option>
+															   <option value="one">Water</option>
+															   <option value="two">Electricity</option>
+															   <option value="two">Both</option>
+															  
+															</select>
+															<input name="displayValue" placeholder="please select" id="displayValue" style="position:absolute;top:0px;left:0px;width:183px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:0px solid #556;" onfocus="this.select()" type="text">
+															<input name="idValue" id="idValue" type="hidden">
+				`									</div>
+												  
+								  
+								</td> -->
 			<td>61</td>
 			<td>2011/04/25</td>
 			<td>$320,800</td>
@@ -633,73 +652,8 @@
 		</tr>
 	</tbody>
 </table>
-
-
-							<!-- <div class="panel">
-								<div class="panel-heading"></div>
-								<div class="panel-body">
-									<table class="table table-bordered" >
-										<thead>
-											<tr>
-												<th>Hse No.</th>
-												<th>First Name</th>
-												<th>Last Name</th>
-												<th>Phone</th>
-												<th>Email</th>
-												<th>Role</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>G11</td>
-												<td>Steve</td>
-												<td>Jobs</td>
-												<td>+254-745-956-567</td>
-												<td>example@gmail.com</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td>G02</td>
-												<td>Simon</td>
-												<td>Philips</td>
-												<td>+254-745-956-567</td>
-												<td>example@gmail.com</td>
-												<td></td>
-											</tr>
-											<tr>
-												<td>A03</td>
-												<td>Jane</td>
-												<td>Doe</td>
-												<td>+254-745-956-567</td>
-												<td>example@gmail.com</td>
-												<td></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div> -->
-									<button>Add User </button> 
-							
-						</div>
-					</div>
-				</div> -->
-			</div>
-			<!-- END MAIN CONTENT -->
-		<!-- 	<footer>
-				<div class="container-fluid">
-					<p class="copyright">&copy; 2016. Designed &amp; Crafted by <a href="https://themeineed.com">Rent-Beta Version
-				</div>
-			</footer> -->
-		</div>
-		<!-- END MAIN -->
-	</div>
-	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<!-- <script src="assets/js/jquery/jquery-2.1.0.min.js"></script>
-	<script src="assets/js/bootstrap/bootstrap.min.js"></script>
-	<script src="assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="assets/js/klorofil.min.js"></script> -->
-
+</div>
+</div>
 
 
 

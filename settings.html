@@ -39,6 +39,16 @@
 					<ul class="nav">
 						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
 					
+							<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-apartment"></i> <span>Tenants</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse ">
+								<ul class="nav">
+									<li><a href="list of tenants.html" class="">List of Tenants</a></li>
+									<li><a href="add tenant.html" class="">Add Tenant</a></li>
+									
+								</ul>
+							</div>
+						</li>
 						
 						<!-- 	<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-user"></i> <span>Users</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
@@ -61,6 +71,7 @@
 								</ul>
 							</div>
 						</li> -->
+
 
 						<li><a href="settings.html" class=" "><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
 						<li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
@@ -106,31 +117,67 @@
 			</nav>
 			<!-- END NAVBAR -->
 			<!-- MAIN CONTENT -->
-			<div class="main-content">
-				<div class="container-fluid">
-					<h3 class="page-title">Settings</h3>
-
-					<div class="settingz" style="margin:0 auto; width: 800px;background-color:#fff;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;border: solid;border-color: #0342">
+			<h1 class="panel-title" style="width: 100%;height: 55px;background-color: #fff; padding-left: 50px;padding-top:10px;margin-bottom: 10px;font-size: 30px;" >Settings</h1>
+			<div class="panel panel-headline" style="max-width: 90%;margin: 0 auto;">
 						
-					<u ><b>TIME</b> </u>
-					<a href="#"><br>Date Format</a>
+				<div  class="panel-body">
+						
+						
+					<u ><b>TIME</b> </u><br>
+					<b>Date Format</b>
+					<label class="fancy-checkbox">
+										<input type="checkbox">
+										<span>dd-mm-yy</span>
+										
+									</label>
+									<label class="fancy-checkbox">
+										<input type="checkbox">
+										<span>mm-dd-yy</span>
+										
+									</label>
+									<label class="fancy-checkbox">
+										<input type="checkbox">
+										
+										<span>yy-mm-dd</span>
+									</label>
+					
 					<br>
-					<br>
-					<u><b>NUMBERS</b></u>
-					<a href="#"><br>Thousands Separator<br>Decimal Separator<br>Number of Decimal</a>
-					<br>
+					<u ><b>NUMBERS</b></u>
+					
+					<label class="fancy-checkbox">
+										<input type="checkbox">
+										<span>Decimal separator</span>
+										
+									</label>
+									<label class="fancy-checkbox">
+										<input type="checkbox">
+										<span>Thousands Separator</span>
+										
+									</label>
+									<label class="fancy-checkbox">
+										<input type="checkbox">
+										
+										<span>Number of Decimal</span>
+									</label>
 					<br>
 					<u><b>EMAIL</b></u>
-					
-					<a href="#"><br>Form Name<br>Form Address</a>
-					<br>
-					<br>
-					<button>Save Changes</button>
-
-					</div>
+						<label class="fancy-checkbox">
+										<input type="checkbox">
+										<span>Form Name</span>
+										
+									</label>
+									<label class="fancy-checkbox">
+										<input type="checkbox">
+										
+										<span>Form Address</span>
+									</label>
+									<br>
+									<button>Save Changes</button>
+				</div>
 				
-						</div>
-					</div>
+			</div>
+					
+
 				
 
 			<!-- END MAIN CONTENT -->
